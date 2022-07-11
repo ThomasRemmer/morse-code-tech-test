@@ -38,8 +38,8 @@ const translate = (str) => {
     charArr = str.toLowerCase().split("")
 
     for (let i = 0; i < charArr.length; i++) {
-        
-        if (charArr[i] in morse){
+
+        if (charArr[i] in morse) {
             charArr[i] = morse[charArr[i]]
         }
         else {
@@ -54,8 +54,8 @@ const translate = (str) => {
 
 const handleInput = (event) => {
     string = event.target.value
-    
-    
+
+
     userOutput.innerHTML = translate(string);
 
 }
