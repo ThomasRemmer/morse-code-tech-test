@@ -1,4 +1,0 @@
-create object with key/value pair = to letter/morse
-convert input into array, loop through comparing each letter to key, pulling value for correct letter into own array.
-join new array as a string with " " between each letter
-push new string to DOM
