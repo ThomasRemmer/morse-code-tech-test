@@ -11,7 +11,7 @@ it("should translate A%C to 'Invalid Input'" , () => {
     expect(result).toBe("Invalid Input")
 })
 
-it("should translate ABC EF to '.- -... -.-.'" , () => {
-    const result = translate("ABC")
-    expect(result).toBe(".- -... -.-.  . ..-.")
+it("should translate ABC EF to '.- -... -.-.  -..'" , () => {
+    const result = translate("ABC D")
+    expect(result).toBe(".- -... -.-.  -..")
 })
