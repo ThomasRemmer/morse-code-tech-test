@@ -3,7 +3,7 @@ h1 {
     font-size: 2rem;
 }
 
-p{
+p {
     color: $text-color;
     font-size: 1.5rem;
 }
@@ -13,13 +13,15 @@ label {
     color: $text-color;
 }
 
-@media  (min-width: 992px) {
+@media (min-width: 992px) {
     h1 {
         font-size: 4rem;
     }
+
     p {
         font-size: 3rem;
     }
+
     label {
         font-size: 2rem;
     }
