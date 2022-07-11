@@ -1,3 +1,7 @@
+let userInput = document.querySelector("#input")
+let userOutput = document.querySelector("#output")
+
+
 const morse = {
     a: ".-",
     b: "-...",
@@ -25,10 +29,11 @@ const morse = {
     x: "-..-",
     y: "-.--",
     z: "--..",
-    " ": "",
+    " ": "/",
 }
 
-export const translate = (str) => {
+const translate = (str) => {
+
     let charArr = []
     charArr = str.toLowerCase().split("")
 
@@ -40,12 +45,22 @@ export const translate = (str) => {
         else {
             charArr = ["Invalid Input"]
         }
-        
-        
+
     }
     charArr = charArr.join(" ")
+    console.log(charArr)
     return (charArr)
 }
+
+const handleInput = (event) => {
+    string = event.target.value
+    
+    
+    userOutput.innerHTML = translate(string);
+
+}
+
+userInput.addEventListener("input", handleInput)
 
 
 
